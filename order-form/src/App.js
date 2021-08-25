@@ -1,5 +1,6 @@
-//import './App.css';
 import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const handleClick = () => {
   console.log('darojas');
@@ -8,12 +9,8 @@ const handleClick = () => {
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <div className="header">
-          <h1>Order form</h1>
-          <button onClick={handleClick}>Back</button>
-        </div>
-        <hr/>
         <Home />
       </div>
     </div>
