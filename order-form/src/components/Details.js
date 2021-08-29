@@ -3,28 +3,23 @@ import { useParams } from "react-router-dom";
 import Data from "../data.json"
 
 const Details = () => {
-    //const [detailsState, setDetailsState] = useState("");
+    const [detailsState, setDetailsState] = useState("");
     const [sizeState, setSizeState] = useState("");
     const [colorState, setColorState] = useState("");
     const [shoeSizeState, setShoeSizeState] = useState("");
     const {code} = useParams();
     const properties = Data.varieties.map((property) => property.code);
     const product = Data.items.find((item) => item.code === code);
-    let state = "";
-
 
     const handleChange = (event) => {
         if (event.target.name === "SIZE") {
-            state = sizeState;
-            setSizeState(event.target.value);
+            setDetailsState(setSizeState(event.target.value));
         }
         if (event.target.name === "COLOR") {
-            state = colorState;
-            setColorState(event.target.value);
+            setDetailsState(setColorState(event.target.value));
         }
         if (event.target.name === "SHOE-SIZE") {
-            state = shoeSizeState;
-            setShoeSizeState(event.target.value);
+            setDetailsState(setShoeSizeState(event.target.value));
         }
     }
 
@@ -37,24 +32,25 @@ const Details = () => {
                 if (product.varieties.includes(attributes)) {
                     return (
                         <div className="choices">
+                            <h5>{property.description}</h5>
                             <select 
                                 className="dropdown"
                                 name={attributes} 
-                                value={state}
+                                value={detailsState}
                                 onChange={handleChange}
                                 >
                                     <option value={property.description}>
                                         {property.description}
                                     </option>
-                                    {property.options.map((a) => (
-                                    <option value={a.code}>
-                                        {a.description}
+                                    {property.options.map((item) => (
+                                    <option value={item.code}>
+                                        {item.description}
                                     </option>
                                 ))};
                             </select>
                         </div>
                     )
-                }else{
+                } else {
                     return null;
                 }
             }
