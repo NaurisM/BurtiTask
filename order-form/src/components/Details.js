@@ -25,17 +25,17 @@ const Details = () => {
 
     return ( 
         <form className="item-details">
-            <h2>{ product.description }</h2>
-            {properties.map((attributes) => {
-                const property = Data.varieties.find((attribute) => attribute.code === attributes);
+            <h2>{product.description}</h2>
+            {properties.map((variety) => {
+                const property = Data.varieties.find((attribute) => attribute.code === variety);
             
-                if (product.varieties.includes(attributes)) {
+                if (product.varieties.includes(variety)) {
                     return (
                         <div className="choices">
                             <h5>{property.description}</h5>
                             <select 
                                 className="dropdown"
-                                name={attributes} 
+                                name={variety} 
                                 value={detailsState}
                                 onChange={handleChange}
                                 >
