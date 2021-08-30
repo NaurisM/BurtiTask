@@ -3,10 +3,6 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Details from "./components/Details";
 
-// const handleClick = () => {
-//   console.log('darojas');
-// }
-
 function App() {
   return (
     <Router>

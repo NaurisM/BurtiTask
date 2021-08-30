@@ -15,10 +15,10 @@ const Details = () => {
         if (event.target.name === "SIZE") {
             setDetailsState(setSizeState(event.target.value));
         }
-        if (event.target.name === "COLOR") {
+        else if (event.target.name === "COLOR") {
             setDetailsState(setColorState(event.target.value));
         }
-        if (event.target.name === "SHOE-SIZE") {
+        else if (event.target.name === "SHOE-SIZE") {
             setDetailsState(setShoeSizeState(event.target.value));
         }
     }
@@ -28,7 +28,6 @@ const Details = () => {
             <h2>{product.description}</h2>
             {properties.map((variety) => {
                 const property = Data.varieties.find((attribute) => attribute.code === variety);
-            
                 if (product.varieties.includes(variety)) {
                     return (
                         <div className="choices">

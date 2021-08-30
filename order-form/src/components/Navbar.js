@@ -8,7 +8,7 @@ const Navbar = () => {
                 <Link to="/">Atpakaļ</Link>
             </div>
         </nav>
-     );
+    );
 }
  
 export default Navbar;
