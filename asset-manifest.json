@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BurtiTask/static/css/main.825e4c80.chunk.css",
+    "main.js": "/BurtiTask/static/js/main.7a6bdd20.chunk.js",
+    "main.js.map": "/BurtiTask/static/js/main.7a6bdd20.chunk.js.map",
+    "runtime-main.js": "/BurtiTask/static/js/runtime-main.45189a53.js",
+    "runtime-main.js.map": "/BurtiTask/static/js/runtime-main.45189a53.js.map",
+    "static/js/2.d9d72a35.chunk.js": "/BurtiTask/static/js/2.d9d72a35.chunk.js",
+    "static/js/2.d9d72a35.chunk.js.map": "/BurtiTask/static/js/2.d9d72a35.chunk.js.map",
+    "index.html": "/BurtiTask/index.html",
+    "static/css/main.825e4c80.chunk.css.map": "/BurtiTask/static/css/main.825e4c80.chunk.css.map",
+    "static/js/2.d9d72a35.chunk.js.LICENSE.txt": "/BurtiTask/static/js/2.d9d72a35.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45189a53.js",
+    "static/js/2.d9d72a35.chunk.js",
+    "static/css/main.825e4c80.chunk.css",
+    "static/js/main.7a6bdd20.chunk.js"
+  ]
+}
