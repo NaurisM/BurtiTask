@@ -18,12 +18,12 @@
 
 .navbar h1 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .navbar a {
   text-decoration: none;
-  transition: 0.3s;
+  transition: opacity 0.3s;
 }
 
 .navbar a:hover {
@@ -35,12 +35,12 @@
   margin: 20px;
   padding: 10px 15px;
   border: 1px solid #333;
-  transition: box-shadow 0.3s;
+  transition: border 0.4s;
   cursor: pointer;
 }
 
 .item-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid orange;
 }
 
 .item-preview h4 {
@@ -58,5 +58,10 @@
 }
 
 .choices {
-  padding: 10px 20px;
+  padding: 10px 0;
+}
+
+.dropdown {
+  min-width: 150px;
+  padding: 10px;
 }
